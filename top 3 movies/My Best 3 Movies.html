@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Top 3 Best Movies</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .movie {
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .movie img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .movie-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .movie h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .movie p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .movie {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .movie img {
+                width: 100%;
+                height: auto;
+            }
+
+            .movie-content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎬 My Top 3 Best Movies</h1>
+        <p>These recent releases really left an impact — visually, emotionally, and cinematically.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="movie">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn2.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcS-v82iAoNANJgZ6EATtRCYgJvaXN9L02Dg0V5-0oN9IFOQVluQ&psig=AOvVaw2EoN7vAyaO5WfHuK0fcwQp&ust=1746847010749000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPDl3K62lY0DFQAAAAAdAAAAABAE" alt="Oppenheimer Poster">
+            <div class="movie-content">
+                <h2>1. Oppenheimer (2023)</h2>
+                <p>Directed by Christopher Nolan, <strong>Oppenheimer</strong> is a biographical thriller about J. Robert Oppenheimer and the creation of the atomic bomb. It's an intense, cerebral, and visually stunning masterpiece.</p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn1.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSYcWh7tLxKT9zfhqv9pWB99jZgkp0kMELvBn8iAd6nBQ7KesxS&psig=AOvVaw1VMs4D_tKxjZ-SX1N2xB2n&ust=1746847222728000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIi6rZW3lY0DFQAAAAAdAAAAABAE" alt="Dune: Part Two (2024)">
+            <div class="movie-content">
+                <h2>2. Dune: Part Two (2024)</h2>
+                <p>Denis Villeneuve’s continuation of the epic sci-fi saga delivers breathtaking visuals, deep political intrigue, and spectacular action. <strong>Dune: Part Two</strong> builds on the foundation and elevates the experience.</p>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg" alt="Spider-Man: No Way Home Poster">
+            <div class="movie-content">
+                <h2>3. Spider-Man: No Way Home (2021)</h2>
+                <p>This Marvel blockbuster brings together generations of Spider-Man fans with a multiverse twist. Action-packed and emotionally satisfying, it’s one of the most iconic superhero films of the decade.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

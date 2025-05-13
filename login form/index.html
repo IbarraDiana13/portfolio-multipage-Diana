@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .link {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .form-section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Login Section -->
+    <div id="loginSection" class="form-section active">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="#" class="link" id="forgotPasswordLink">Forgot Password?</a>
+        <a href="#" class="link" id="createAccountLink">Create Account</a>
+    </div>
+
+    <!-- Create Account Section -->
+    <div id="createAccountSection" class="form-section">
+        <h2>Create Account</h2>
+        <form id="createAccountForm">
+            <input type="text" id="newUsername" placeholder="Username" required>
+            <input type="email" id="newEmail" placeholder="Email" required>
+            <input type="password" id="newPassword" placeholder="Password" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <a href="#" class="link" id="backToLoginFromCreate">Back to Login</a>
+    </div>
+
+    <!-- Forgot Password Section -->
+    <div id="forgotPasswordSection" class="form-section">
+        <h2>Forgot Password</h2>
+        <form id="forgotPasswordForm">
+            <input type="email" id="forgotPasswordEmail" placeholder="Enter your email" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <a href="#" class="link" id="backToLoginFromForgot">Back to Login</a>
+    </div>
+</div>
+
+<script>
+    // Show and hide sections
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.form-section');
+        sections.forEach(section => section.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Event listeners for navigation
+    document.getElementById('forgotPasswordLink').addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection('forgotPasswordSection');
+    });
+
+    document.getElementById('createAccountLink').addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection('createAccountSection');
+    });
+
+    document.getElementById('backToLoginFromCreate').addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection('loginSection');
+    });
+
+    document.getElementById('backToLoginFromForgot').addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection('loginSection');
+    });
+
+    // Login Form submission (simulated)
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Login successful!');
+        // You can add real login logic here (e.g., validation, API call)
+    });
+
+    // Create Account Form submission (simulated)
+    document.getElementById('createAccountForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Account created successfully!');
+        // You can add real registration logic here (e.g., validation, API call)
+    });
+
+    // Forgot Password Form submission (simulated)
+    document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Password reset email sent!');
+        // You can add real password reset logic here (e.g., API call)
+    });
+</script>
+
+</body>
+</html>

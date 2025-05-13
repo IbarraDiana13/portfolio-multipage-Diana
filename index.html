@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallig Plains Colleges, Inc.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo">
+          <i class="fas fa-graduation-cap"></i>
+          <div>
+            <h1>Mallig Plains</h1>
+            <p>Colleges, Inc.</p>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="user-profile">
+          <div class="avatar">DAI</div>
+          <div class="user-info">
+            <span class="username">Diana Mae Ibarra</span>
+            <span class="user-role">Student</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav id="nav">
+      <div class="nav-header">
+        <h3>Activities</h3>
+        <button class="close-nav" id="close-nav">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a
+            href="bday/index.html"
+            class="nav-link active"
+            data-activity="bday/index.html"
+          >
+            <div class="nav-icon"><i class="fas fa-birthday-cake"></i></div>
+            <span>Birthday Invitation</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="calculator/index.html"
+            class="nav-link"
+            data-activity="calculator/index.html"
+          >
+            <div class="nav-icon"><i class="fas fa-calculator"></i></div>
+            <span>Calculator</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="enrollment/index.html"
+            class="nav-link"
+            data-activity="enrollment/index.html"
+          >
+            <div class="nav-icon"><i class="fas fa-clipboard-list"></i></div>
+            <span>Enrollment Form</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="favorite web/index.html"
+            class="nav-link"
+            data-activity="favorite web/index.html"
+          >
+            <div class="nav-icon"><i class="fas fa-heart"></i></div>
+            <span>My Favorite Website</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="login form/index.html"
+            class="nav-link"
+            data-activity="login form/index.html"
+          >
+            <div class="nav-icon"><i class="fas fa-sign-in-alt"></i></div>
+            <span>Login and Register Form</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="top 3 movies/My Best 3 Movies.html"
+            class="nav-link"
+            data-activity="top 3 movies/My Best 3 Movies.html"
+          >
+            <div class="nav-icon"><i class="fas fa-film"></i></div>
+            <span>Top 3 Movies</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="resume/Resume.html"
+            class="nav-link"
+            data-activity="resume/Resume.html"
+          >
+            <div class="nav-icon"><i class="fas fa-file-alt"></i></div>
+            <span>Resume</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="price/index.html"
+            class="nav-link"
+            data-activity="price/index.html"
+          >
+            <div class="nav-icon"><i class="fas fa-tags"></i></div>
+            <span>Price List</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="weather-app-diana/index.html"
+            class="nav-link"
+            data-activity="weather-app-diana/index.html"
+          >
+            <div class="nav-icon"><i class="fas fa-cloud-sun"></i></div>
+            <span>Global Weather App</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <div class="page-header">
+        <div class="breadcrumb">
+          <span>Activities</span>
+          <i class="fas fa-chevron-right"></i>
+          <span id="activity-title">Birthday Invitation</span>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-outline">
+            <i class="fas fa-download"></i>
+            <span>Export</span>
+          </button>
+          <button class="btn btn-primary" id="view-source">
+            <i class="fas fa-external-link-alt"></i>
+            <span>View Source</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <iframe
+          id="activity-frame"
+          src="bday/index.html"
+          title="Activity"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Mallig Plains Colleges, Inc.</span>
+        </div>
+        <div class="footer-text">
+          This project compilation showcases various web development activities
+          and exercises. Each activity demonstrates different aspects of HTML,
+          CSS, and JavaScript.
+        </div>
+        <div class="footer-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; 2025 Project Compilations. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
